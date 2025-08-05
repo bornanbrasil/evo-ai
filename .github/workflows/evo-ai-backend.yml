@@ -16,7 +16,6 @@ env:
     ./k8s/configmap.yaml
     ./k8s/deployment.yaml
     ./k8s/hpa.yaml
-    ./k8s/job-init.yaml
     ./k8s/secret.yaml
     ./frontend/k8s/deployment.yaml
     ./frontend/k8s/service.yaml
