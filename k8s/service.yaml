@@ -12,18 +12,3 @@ spec:
       port: 8000
       targetPort: 8000
   type: ClusterIP
----
-# frontend-service.yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: evo-ai-frontend
-  namespace: client-saas
-spec:
-  selector:
-    app: evo-ai-frontend
-  ports:
-    - protocol: TCP
-      port: 3000
-      targetPort: 3000
-  type: ClusterIP
