@@ -29,4 +29,4 @@ data:
   HOST: "0.0.0.0"
   PORT: "8000"
   DEBUG: "false"
-  NEXT_PUBLIC_API_URL: "http://evo-ai-backend.client-saas.svc.cluster.local:8000"
+  NEXT_PUBLIC_API_URL: "https://ai-api.bornan.com.br"
