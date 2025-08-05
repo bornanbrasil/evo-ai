@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: evo-ai-init
+spec:
+  template:
+    spec:
+      containers:
+        - name: init
+          image: bornan.azurecr.io/evo-ai-backend:latest
+          command: ["bash", "-c"]
+          args:
+            - alembic upgrade head && python -m scripts.run_seeders
+          envFrom:
+            - configMapRef:
+                name: evo-ai-config
+            - secretRef:
+                name: evo-ai-secrets
+      restartPolicy: OnFailure
