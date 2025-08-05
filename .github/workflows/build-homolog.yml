@@ -1,10 +1,7 @@
 name: Build Homolog Images
 
 on:
-  push:
-    branches:
-      - develop
-      - homolog
+  workflow_dispatch:
 
 jobs:
   detect-changes:
