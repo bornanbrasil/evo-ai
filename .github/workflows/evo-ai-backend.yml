@@ -18,9 +18,9 @@ env:
     ./k8s/hpa.yaml
     ./k8s/job-init.yaml
     ./k8s/secret.yaml
-    ./k8s/frontend/deployment.yaml
-    ./k8s/frontend/service.yaml
-    ./k8s/frontend/ingress.yaml
+    ./frontend/k8s/deployment.yaml
+    ./frontend/k8s/service.yaml
+    ./frontend/k8s/ingress.yaml
   DOCKER_FILE: ./Dockerfile
   BUILD_CONTEXT_PATH: ./
   NAMESPACE: client-saas
